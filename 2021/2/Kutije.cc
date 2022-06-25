@@ -32,6 +32,7 @@ bool check_destination(short int a, short int b)
         }
         k++;
     }
+    poss.clear();
     return false;
 }
 

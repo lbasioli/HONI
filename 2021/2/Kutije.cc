@@ -23,7 +23,6 @@ bool check_destination(short int a, short int b)
         dest = p.at(k).at(a);
         if (dest == b)
         {
-            poss.clear();
             return true;
         }
         if (poss.find(dest) == poss.end())
@@ -32,7 +31,6 @@ bool check_destination(short int a, short int b)
         }
         k++;
     }
-    poss.clear();
     return false;
 }
 
@@ -53,6 +51,7 @@ int main()
         } else {
             cout << "NE\n";
         }
+        poss.clear();
     }
     return 0;
 }
